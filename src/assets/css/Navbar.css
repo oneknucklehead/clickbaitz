@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  position: fixed;
+  background-color: aqua;
+  bottom: 40px;
+}
+
+li {
+  cursor: pointer;
+}
+.active {
+  font-weight: bold;
+}
