@@ -78,7 +78,7 @@ const AboutPage = () => {
                                     height={400}
                                 ></Lottie>
                             </span>
-                            <span className="blob-resp block sm:hidden absolute -right-12">
+                            <span className="blob-resp block sm:hidden absolute -right-8">
                                 <Lottie options={defaultOptions}
                                     width={300}
                                     height={400}

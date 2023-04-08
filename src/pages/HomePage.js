@@ -28,7 +28,7 @@ const HomePage = ({ waveRef }) => {
                                     data-aos="fade-up"
                                     data-aos-duration="1000"
                                 >We are the</h3>
-                                <h1 className="break-all-custom text-6xl md:text-8xl 2xl:text-9xl sm:pt-2 pb-3 sm:pb-6 fontstyle-lato font-bold"
+                                <h1 className="break-all-custom text-5xl md:text-8xl 2xl:text-9xl sm:pt-2 pb-3 sm:pb-6 fontstyle-lato font-bold"
                                     data-aos="fade-up"
                                     data-aos-duration="1000"
                                     data-aos-delay="100"

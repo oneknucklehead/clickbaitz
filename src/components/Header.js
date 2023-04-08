@@ -8,7 +8,7 @@ const Header = ({ buttonRef, logoRef }) => {
 
     return (
         <>
-            <div className="z-50 pt-8 px-16 bg-transparent fixed w-full top-0 flex justify-between items-center">
+            <div className="z-50 pt-8 px-6 sm:px-16 bg-transparent fixed w-full top-0 flex justify-between items-center flex-wrap gap-4">
                 <div className="">
                     <img ref={logoRef} src={brandLogo} alt="brand logo" className="h-10" />
                 </div>

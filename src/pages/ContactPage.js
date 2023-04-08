@@ -65,7 +65,7 @@ const ContactPage = () => {
                         <div className="flex flex-wrap gap-4 justify-between w-full"
                             data-aos="fade-up"
                             data-aos-duration="1000"
-                            data-aos-delay="200"
+                        // data-aos-delay="200"
                         >
                             <div className="text-sm text-[#1B3654] fontstyle-lato">
                                 © ClickBaitz Agency {new Date().getFullYear()}

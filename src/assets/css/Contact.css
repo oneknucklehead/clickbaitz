@@ -15,8 +15,8 @@
 }
 .logo {
   /* position: absolute; */
-  width: 130px;
-  height: 130px;
+  width: 120px;
+  height: 120px;
   margin-left: 15px;
   margin-bottom: 15px;
   /* background: #000; */
@@ -41,7 +41,7 @@
 .text span {
   position: absolute;
   left: 50%;
-  font-size: 1rem;
+  font-size: 1.2rem;
   transform-origin: 0 120px;
   text-transform: uppercase;
 }
