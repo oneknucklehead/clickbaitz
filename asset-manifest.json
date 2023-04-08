@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/clickbaitz/static/css/main.2a651687.css",
-    "main.js": "/clickbaitz/static/js/main.8bdba7a9.js",
+    "main.css": "/clickbaitz/static/css/main.edaec29d.css",
+    "main.js": "/clickbaitz/static/js/main.38a8793a.js",
     "static/js/977.6b77a864.chunk.js": "/clickbaitz/static/js/977.6b77a864.chunk.js",
     "static/js/787.f8c428ad.chunk.js": "/clickbaitz/static/js/787.f8c428ad.chunk.js",
     "static/media/dummy.jpg": "/clickbaitz/static/media/dummy.74f2172dc6e84aa6d163.jpg",
@@ -10,13 +10,13 @@
     "static/media/brandLogo.png": "/clickbaitz/static/media/brandLogo.21d4f82969d3ea687ed7.png",
     "index.html": "/clickbaitz/index.html",
     "static/media/blob-haikei.svg": "/clickbaitz/static/media/blob-haikei.36f96224bcc4dced1ec67c2cf1e2710a.svg",
-    "main.2a651687.css.map": "/clickbaitz/static/css/main.2a651687.css.map",
-    "main.8bdba7a9.js.map": "/clickbaitz/static/js/main.8bdba7a9.js.map",
+    "main.edaec29d.css.map": "/clickbaitz/static/css/main.edaec29d.css.map",
+    "main.38a8793a.js.map": "/clickbaitz/static/js/main.38a8793a.js.map",
     "977.6b77a864.chunk.js.map": "/clickbaitz/static/js/977.6b77a864.chunk.js.map",
     "787.f8c428ad.chunk.js.map": "/clickbaitz/static/js/787.f8c428ad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2a651687.css",
-    "static/js/main.8bdba7a9.js"
+    "static/css/main.edaec29d.css",
+    "static/js/main.38a8793a.js"
   ]
 }
