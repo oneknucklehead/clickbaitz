@@ -23,7 +23,7 @@ const HomePage = ({ waveRef }) => {
                 <Container>
                     <div className="h-[100vh]">
                         <div className="grid grid-cols-1 lg:grid-cols-2 h-full">
-                            <div className="text-[#1B3654] text-center lg:text-left flex flex-col justify-center items-center lg:items-start">
+                            <div className="text-[#1B3654] text-center lg:text-left flex flex-col justify-center items-center lg:items-start px-4 md:px-0">
                                 <h3 className="text-4xl 2xl:text-5xl fontstyle-lato font-semibold"
                                     data-aos="fade-up"
                                     data-aos-duration="1000"
@@ -35,7 +35,7 @@ const HomePage = ({ waveRef }) => {
                                 >Clickbaitz{" "}
                                     <span className="hidden lg:flex" ></span>
                                     Agency</h1>
-                                <p className="text-lg lg:text-xl font-semibold px-4"
+                                <p className="text-lg lg:text-xl font-semibold"
                                     data-aos="fade-up"
                                     data-aos-duration="1000"
                                     data-aos-delay="200"
