@@ -9,7 +9,7 @@ const ContactPage = () => {
     useEffect(() => {
         if (textRef != null) {
             textRef.current.innerHTML = textRef.current.innerText.split("").map(
-                (char, i) => `<span style="transform:rotate(${i * 5.1}deg)">${char}</span>`
+                (char, i) => `<span style="transform:rotate(${i * 8}deg)">${char}</span>`
             ).join("");
         }
     }, []);
