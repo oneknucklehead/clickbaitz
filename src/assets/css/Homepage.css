@@ -9,3 +9,19 @@
     word-break: break-all;
   }
 }
+.disp-rocket2 {
+  display: none;
+}
+.disp-rocket1 {
+  display: none;
+}
+@media only screen and (min-width: 451px) and (max-width: 640px) {
+  .disp-rocket1 {
+    display: block;
+  }
+}
+@media only screen and (min-width: 298px) and (max-width: 450px) {
+  .disp-rocket2 {
+    display: block;
+  }
+}

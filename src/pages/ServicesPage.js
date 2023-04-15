@@ -2,15 +2,15 @@ import React from 'react';
 import Container from "../components/Container.js";
 import serviceWave from "../assets/images/services-wave.png";
 // import serviceBg from "../assets/images/services-bg.png";
-import serviceBg from "../assets/images/blob-haikei.svg";
+import serviceBg from "../assets/images/blobanimation.svg";
 const ServicesPage = () => {
     return (
         <div className="relative h-full w-full overflow-hidden ">
-            <img src={serviceWave} alt="bg" className="absolute w-full" />
+            <img src={serviceWave} alt="bg" className="absolute h-[4%] w-full" />
             <Container>
                 <div className="px-8 sm:px-12">
                     <span className="flex justify-center items-center">
-                        <img src={serviceBg} alt="bg" className="absolute top-12 object-cover xl:object-contain w-full h-full" />
+                        <img src={serviceBg} alt="bg" className="absolute top-20 object-cover xl:object-contain md:w-[90%] h-[90%]" />
                     </span>
                     {/* <!-- component --> */}
 

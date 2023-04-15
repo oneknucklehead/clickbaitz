@@ -36,7 +36,7 @@ const Sidebar = ({ setSidebarActive, activeSidebar }) => {
                         : "opacity-0 -z-50"}
             bg-[#d0e7e949]`}>
                 <div id="sidebar" ref={wrapperRef} className={`transition-custom-sidebar absolute right-0 top-0 py-6 px-8 bg-[#1B3654]
-                ${activeSidebar ? "w-full sm:w-[400px] h-full" : "w-0 h-full"}
+                ${activeSidebar ? "w-full sm:w-[400px] h-full" : "w-[0px] h-full"}
                 `}>
                     <div className="flex justify-end">
                         <button onClick={() => setSidebarActive(false)}

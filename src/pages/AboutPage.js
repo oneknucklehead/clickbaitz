@@ -2,6 +2,7 @@ import React from 'react';
 import Container from "../components/Container";
 
 import aboutImg from "../assets/images/aboutImg.jpg";
+import blobImage from "../assets/images/blobanimationAbout.svg";
 import Lottie from 'react-lottie';
 import * as animationData from "../assets/lottie/97422-blob.json";
 import "../assets/css/AboutPage.css";
@@ -19,7 +20,7 @@ const AboutPage = () => {
     return (
         <>
             <Container>
-                <div className="flex h-[100vh] flex-col-reverse justify-center text-resp px-8 sm:px-32 items-center lg:px-0 lg:grid lg:grid-cols-2 gap-24">
+                <div className="z-10 flex h-[100vh] flex-col-reverse justify-center text-resp px-8 sm:px-32 items-center lg:px-0 lg:grid lg:grid-cols-2 gap-24 overflow-clip">
                     <div className="flex flex-col justify-center z-10">
                         <h1 className="text-white text-5xl sm:text-6xl xl:max-2xl:text-7xl 2xl:text-8xl fontstyle-lato font-semibold"
                             data-aos="fade-up"
@@ -47,8 +48,8 @@ const AboutPage = () => {
                         </div>
                     </div>
                     <div className="lg:h-[100vh] transition-custom">
-                        <div className="relative flex justify-center items-center h-full lg:overflow-hidden">
-                            <span className="hidden 2xl:block absolute w-full top-24 -right-24">
+                        <div className="relative flex justify-center items-center h-full">
+                            {/* <span className="hidden 2xl:block absolute w-full top-24 -right-24">
                                 <Lottie options={defaultOptions}
                                     width={750}
                                     height={750}
@@ -83,8 +84,11 @@ const AboutPage = () => {
                                     width={300}
                                     height={400}
                                 ></Lottie>
-                            </span>
+                            </span> */}
 
+                            <span className="z-10 -right-32 absolute h-[200%] w-full">
+                                <img src={blobImage} alt="about section" className="w-full h-full object-fill" />
+                            </span>
                             <span className="z-10">
                                 <img src={aboutImg} alt="about section" className="w-[100%] lg:w-[90%] object-cover" />
                             </span>

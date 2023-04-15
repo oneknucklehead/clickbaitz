@@ -15,25 +15,29 @@ const ContactPage = () => {
     }, []);
     return (
         <>
-            <div className="w-full">
-                <img src={contactBg} alt="contact wave alt text" className="w-full" />
-            </div>
-            <Container>
-                <div className="">
+            <div className="h-full min-h-screen">
 
-                    <div className="flex flex-col justify-between md:items-center w-full h-[100vh] px-8 py-24 sm:p-24">
-                        <div className="circle md:ml-20"
-                            data-aos="fade-up"
-                            data-aos-duration="1000"
-                        // data-aos-delay="200"
-                        >
-                            <img className="logo object-contain" src={contactImg} alt="coffee contact section"></img>
-                            <div className="text font-semibold">
-                                <p className="text-[#1B3654] fontstyle-lato" ref={textRef}>web designing - marketing - advertising -</p>
+                <div className="w-full">
+                    <img src={contactBg} alt="contact wave alt text" className="w-full" />
+                </div>
+                <Container>
+
+                    <div className="flex flex-col justify-between items-center min-h-screen w-full h-full px-8 py-24 sm:p-24">
+                        <div>
+
+                            <div className="circle md:ml-20 h-fit w-full"
+                                data-aos="fade-up"
+                                data-aos-duration="1000"
+                            // data-aos-delay="200"
+                            >
+                                <img className="logo object-contain" src={contactImg} alt="coffee contact section"></img>
+                                <div className="text font-semibold">
+                                    <p className="text-[#1B3654] fontstyle-lato" ref={textRef}>web designing - marketing - advertising -</p>
+                                </div>
                             </div>
                         </div>
 
-                        <div className="w-full text-[#1B3654] break-all flex gap-10 flex-wrap justify-between"
+                        <div className="my-10 w-full h-fit text-[#1B3654] break-all flex gap-10 flex-wrap justify-between"
                             data-aos="fade-up"
                             data-aos-duration="1000"
                             data-aos-delay="100"
@@ -89,10 +93,10 @@ const ContactPage = () => {
                             </div>
                         </div>
                     </div>
-                </div>
 
 
-            </Container>
+                </Container>
+            </div>
 
         </>
     );

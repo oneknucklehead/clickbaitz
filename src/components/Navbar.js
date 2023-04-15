@@ -35,28 +35,28 @@ const Navbar = () => {
             remHeights.push(remHeight);
             remHeight -= 18;
         }
-        if ((window.scrollY >= (sections[1].clientHeight + sections[2].clientHeight + sections[3].clientHeight + 27 + remHeights[0])) || ((window.scrollY >= (sections[1].clientHeight + remHeights[0] + 54)) && (window.scrollY <= (sections[1].clientHeight + sections[2].clientHeight + remHeights[0] + 27)))) {
+        if ((window.scrollY >= (sections[1].clientHeight + sections[2].clientHeight + sections[3].clientHeight + 27 + remHeights[0])) || ((window.scrollY >= (sections[1].clientHeight + remHeights[0] + 25)) && (window.scrollY <= (sections[1].clientHeight + sections[2].clientHeight + remHeights[0] + 27)))) {
             homeRef.current != null && (homeRef.current.className = "text-[#1B3654] text-[12px]");
         } else {
             homeRef.current != null && (homeRef.current.className = "text-[#fff] text-[12px]");
         }
-        if ((window.scrollY >= (sections[1].clientHeight + sections[2].clientHeight + sections[3].clientHeight + 27 + remHeights[1])) || ((window.scrollY >= (sections[1].clientHeight + remHeights[1] + 54)) && (window.scrollY <= (sections[1].clientHeight + sections[2].clientHeight + remHeights[1] + 27)))) {
+        if ((window.scrollY >= (sections[1].clientHeight + sections[2].clientHeight + sections[3].clientHeight + 27 + remHeights[1])) || ((window.scrollY >= (sections[1].clientHeight + remHeights[1] + 25)) && (window.scrollY <= (sections[1].clientHeight + sections[2].clientHeight + remHeights[1] + 27)))) {
             aboutRef.current != null && (aboutRef.current.className = "text-[#1B3654] text-[12px]");
         } else {
             aboutRef.current != null && (aboutRef.current.className = "text-[#fff] text-[12px]");
         }
-        if ((window.scrollY >= (sections[1].clientHeight + sections[2].clientHeight + sections[3].clientHeight + 27 + remHeights[2])) || ((window.scrollY >= (sections[1].clientHeight + remHeights[2] + 54)) && (window.scrollY <= (sections[1].clientHeight + sections[2].clientHeight + remHeights[2] + 27)))) {
+        if ((window.scrollY >= (sections[1].clientHeight + sections[2].clientHeight + sections[3].clientHeight + 27 + remHeights[2])) || ((window.scrollY >= (sections[1].clientHeight + remHeights[2] + 25)) && (window.scrollY <= (sections[1].clientHeight + sections[2].clientHeight + remHeights[2] + 27)))) {
             servicesRef.current != null && (servicesRef.current.className = "text-[#1B3654] text-[12px]");
         } else {
             servicesRef.current != null && (servicesRef.current.className = "text-[#fff] text-[12px]");
         }
-        if ((window.scrollY >= (sections[1].clientHeight + sections[2].clientHeight + sections[3].clientHeight + 27 + remHeights[3])) || ((window.scrollY >= (sections[1].clientHeight + remHeights[3] + 54)) && (window.scrollY <= (sections[1].clientHeight + sections[2].clientHeight + remHeights[3] + 27)))) {
+        if ((window.scrollY >= (sections[1].clientHeight + sections[2].clientHeight + sections[3].clientHeight + 27 + remHeights[3])) || ((window.scrollY >= (sections[1].clientHeight + remHeights[3] + 25)) && (window.scrollY <= (sections[1].clientHeight + sections[2].clientHeight + remHeights[3] + 27)))) {
             casesRef.current != null && (casesRef.current.className = "text-[#1B3654] text-[12px]");
         } else {
             casesRef.current != null && (casesRef.current.className = "text-[#fff] text-[12px]");
 
         }
-        if ((window.scrollY >= (sections[1].clientHeight + sections[2].clientHeight + sections[3].clientHeight + 27 + remHeights[4])) || ((window.scrollY >= (sections[1].clientHeight + remHeights[4] + 54)) && (window.scrollY <= (sections[1].clientHeight + sections[2].clientHeight + remHeights[4] + 27)))) {
+        if ((window.scrollY >= (sections[1].clientHeight + sections[2].clientHeight + sections[3].clientHeight + 27 + remHeights[4])) || ((window.scrollY >= (sections[1].clientHeight + remHeights[4] + 25)) && (window.scrollY <= (sections[1].clientHeight + sections[2].clientHeight + remHeights[4] + 27)))) {
             contactRef.current != null && (contactRef.current.className = "text-[#1B3654] text-[12px]");
         }
         else {
