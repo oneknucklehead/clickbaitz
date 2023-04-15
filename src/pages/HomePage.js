@@ -8,13 +8,13 @@ import Navbar from "../components/Navbar";
 const HomePage = ({ waveRef, sections }) => {
     const textRef = useRef(null);
     // useEffect(() => {
-    window.addEventListener('scroll', () => {
-        if (textRef.current != null) {
-            if (window.scrollY < sections[0].clientHeight / 2.5) {
-                textRef.current.style.marginTop = Math.round(window.scrollY * 1.1) + 'px';
-            }
-        }
-    });
+    // window.addEventListener('scroll', () => {
+    //     if (textRef.current != null) {
+    //         if (window.scrollY < sections[0].clientHeight / 2.5) {
+    //             textRef.current.style.marginTop = Math.round(window.scrollY * 1.1) + 'px';
+    //         }
+    //     }
+    // });
     //  () => {
 
 
@@ -40,9 +40,7 @@ const HomePage = ({ waveRef, sections }) => {
         <>
             <div className="h-full min-h-screen w-full relative bg-[#D0E7E9]"
             >
-                <div className="w-full">
-                    <img ref={waveRef} src={homeWave} alt="homepage wave" className="w-full absolute bottom-0  z-10" />
-                </div>
+                <img ref={waveRef} src={homeWave} alt="homepage wave" className="w-full absolute -bottom-px  z-10" />
                 <Container>
                     <div className="h-full min-h-screen">
                         <div className="grid grid-cols-1 lg:grid-cols-2  min-h-screen h-full px-8 sm:px-20 lg:px-0">
