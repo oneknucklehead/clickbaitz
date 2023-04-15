@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/clickbaitz/static/css/main.edaec29d.css",
-    "main.js": "/clickbaitz/static/js/main.38a8793a.js",
+    "main.css": "/clickbaitz/static/css/main.12abc627.css",
+    "main.js": "/clickbaitz/static/js/main.e26cd344.js",
     "static/js/977.6b77a864.chunk.js": "/clickbaitz/static/js/977.6b77a864.chunk.js",
     "static/js/787.f8c428ad.chunk.js": "/clickbaitz/static/js/787.f8c428ad.chunk.js",
     "static/media/dummy.jpg": "/clickbaitz/static/media/dummy.74f2172dc6e84aa6d163.jpg",
     "static/media/aboutImg.jpg": "/clickbaitz/static/media/aboutImg.9e9b06e4a8be430abe8d.jpg",
     "static/media/brandLogoWhite.png": "/clickbaitz/static/media/brandLogoWhite.c7f7d9cad3d3ba3d3934.png",
     "static/media/brandLogo.png": "/clickbaitz/static/media/brandLogo.21d4f82969d3ea687ed7.png",
+    "static/media/blobanimation.svg": "/clickbaitz/static/media/blobanimation.aca92e6c1753fb07e705dbe7072bb490.svg",
+    "static/media/blobanimationAbout.svg": "/clickbaitz/static/media/blobanimationAbout.299e9de8bb5f64f742b5254a3fa11b50.svg",
     "index.html": "/clickbaitz/index.html",
-    "static/media/blob-haikei.svg": "/clickbaitz/static/media/blob-haikei.36f96224bcc4dced1ec67c2cf1e2710a.svg",
-    "main.edaec29d.css.map": "/clickbaitz/static/css/main.edaec29d.css.map",
-    "main.38a8793a.js.map": "/clickbaitz/static/js/main.38a8793a.js.map",
+    "main.12abc627.css.map": "/clickbaitz/static/css/main.12abc627.css.map",
+    "main.e26cd344.js.map": "/clickbaitz/static/js/main.e26cd344.js.map",
     "977.6b77a864.chunk.js.map": "/clickbaitz/static/js/977.6b77a864.chunk.js.map",
     "787.f8c428ad.chunk.js.map": "/clickbaitz/static/js/787.f8c428ad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.edaec29d.css",
-    "static/js/main.38a8793a.js"
+    "static/css/main.12abc627.css",
+    "static/js/main.e26cd344.js"
   ]
 }
