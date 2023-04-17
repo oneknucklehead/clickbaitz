@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import Container from "../components/Container";
 import homeWave from "../assets/images/home-wave.png";
-import homeWaveNew from "../assets/images/homeWaveBgnew.svg";
+// import homeWaveNew from "../assets/images/homeWaveBgnew.svg";
 import "../assets/css/Homepage.css";
 import Lottie from 'react-lottie';
 import * as animationData from "../assets/lottie/69164-marketing-campaign-creative-3d-animation.json";
@@ -41,7 +41,7 @@ const HomePage = ({ waveRef, sections }) => {
         <>
             <div className="h-full min-h-screen w-full relative bg-[#D0E7E9]"
             >
-                <img ref={waveRef} src={homeWave} alt="homepage wave" className="w-full h-[12vh] sm:h-fit absolute -bottom-[2px]  z-10" />
+                <img ref={waveRef} src={homeWave} alt="homepage wave" className="w-full h-[20vh] object-cover sm:h-fit absolute -bottom-[2px]  z-10" />
                 {/* <img ref={waveRef} src={homeWaveNew} alt="homepage wave" className="w-full sm:h-fit absolute bottom-0 xl:-bottom-12  z-10" /> */}
                 <Container>
                     <div className="h-full min-h-screen">
@@ -54,7 +54,7 @@ const HomePage = ({ waveRef, sections }) => {
                                     data-aos="fade-up"
                                     data-aos-duration="1000"
                                 >We are the</h3>
-                                <h1 className="w-full lg:w-fit break-all-custom text-5xl md:text-8xl 2xl:text-9xl sm:pt-2 pb-3 sm:pb-6 fontstyle-lato font-bold"
+                                <h1 className="w-full lg:w-fit break-all-custom text-5xl md:text-8xl 2xl:text-9xl sm:pt-2 pb-1 sm:pb-6 fontstyle-lato font-bold"
                                     data-aos="fade-up"
                                     data-aos-duration="1000"
                                     data-aos-delay="100"
