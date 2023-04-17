@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/clickbaitz/static/css/main.87d5d632.css",
-    "main.js": "/clickbaitz/static/js/main.3cae3ea3.js",
+    "main.css": "/clickbaitz/static/css/main.0f11661c.css",
+    "main.js": "/clickbaitz/static/js/main.e8fe64b6.js",
     "static/js/977.6b77a864.chunk.js": "/clickbaitz/static/js/977.6b77a864.chunk.js",
     "static/js/787.f8c428ad.chunk.js": "/clickbaitz/static/js/787.f8c428ad.chunk.js",
     "static/media/dummy.jpg": "/clickbaitz/static/media/dummy.74f2172dc6e84aa6d163.jpg",
@@ -11,13 +11,13 @@
     "static/media/blobanimation.svg": "/clickbaitz/static/media/blobanimation.aca92e6c1753fb07e705dbe7072bb490.svg",
     "static/media/blobanimationAbout.svg": "/clickbaitz/static/media/blobanimationAbout.299e9de8bb5f64f742b5254a3fa11b50.svg",
     "index.html": "/clickbaitz/index.html",
-    "main.87d5d632.css.map": "/clickbaitz/static/css/main.87d5d632.css.map",
-    "main.3cae3ea3.js.map": "/clickbaitz/static/js/main.3cae3ea3.js.map",
+    "main.0f11661c.css.map": "/clickbaitz/static/css/main.0f11661c.css.map",
+    "main.e8fe64b6.js.map": "/clickbaitz/static/js/main.e8fe64b6.js.map",
     "977.6b77a864.chunk.js.map": "/clickbaitz/static/js/977.6b77a864.chunk.js.map",
     "787.f8c428ad.chunk.js.map": "/clickbaitz/static/js/787.f8c428ad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.87d5d632.css",
-    "static/js/main.3cae3ea3.js"
+    "static/css/main.0f11661c.css",
+    "static/js/main.e8fe64b6.js"
   ]
 }
