@@ -6,7 +6,7 @@ import serviceBg from "../assets/images/blobanimation.svg";
 const ServicesPage = () => {
     return (
         <div className="relative h-full w-full overflow-hidden ">
-            <img src={serviceWave} alt="bg" className="absolute h-[4%] w-full" />
+            <img src={serviceWave} alt="bg" className="absolute h-[4.5%] w-full object-cover sm:object-fill" />
             <Container>
                 <div className="px-8 sm:px-12">
                     <span className="flex justify-center items-center">
@@ -14,7 +14,7 @@ const ServicesPage = () => {
                     </span>
                     {/* <!-- component --> */}
 
-                    <div class="min-h-screen py-6 flex flex-col justify-center sm:py-12">
+                    <div class="min-h-screen py-20 flex flex-col justify-center sm:py-12">
                         <span className="flex justify-center items-center"
                             data-aos="fade-up"
                             data-aos-duration="1000"

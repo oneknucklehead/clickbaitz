@@ -38,10 +38,9 @@ const ContactPage = () => {
                 <img src={contactBg} alt="contact wave alt text" className="w-full" />
             </div>
             <div className="flex flex-col justify-center min-h-screen relative">
-
                 <div className="h-full w-full flex justify-evenly items-center flex-col">
 
-                    <div className="relative uppercase">
+                    <div className="relative uppercase mt-[186px] mb-4">
                         <div className="flex flex-col">
 
                             <div
@@ -103,12 +102,13 @@ const ContactPage = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex flex-wrap gap-4 justify-between w-full h-fit"
-                            data-aos="fade-up"
-                            data-aos-duration="1000"
+                        <div className="flex flex-wrap gap-4 justify-between items-center w-full h-full pb-4"
+
                         // data-aos-delay="200"
                         >
-                            <div className="text-sm text-[#1B3654] fontstyle-lato">
+                            <div className="text-sm text-[#1B3654] fontstyle-lato"
+
+                            >
                                 © ClickBaitz Agency {new Date().getFullYear()}
                             </div>
                             <div className="flex gap-4">
@@ -133,7 +133,7 @@ const ContactPage = () => {
 
             </div>
 
-        </>
+        </ >
     );
 };
 
