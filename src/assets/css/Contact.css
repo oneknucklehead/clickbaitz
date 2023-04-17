@@ -12,6 +12,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #d0e7e9;
 }
 .logo {
   /* position: absolute; */
@@ -45,6 +46,15 @@
   transform-origin: 0 120px;
   text-transform: uppercase;
 }
+.bg-text {
+  font-size: 80px;
+}
+.position1 {
+  top: 36px;
+}
+.position2 {
+  top: 128px;
+}
 
 @media screen and (max-width: 340px) {
   .circle {
@@ -57,6 +67,15 @@
   .logo {
     width: 90px;
     height: 90px;
+  }
+  .bg-text {
+    font-size: 55px;
+  }
+  .position1 {
+    top: 30px;
+  }
+  .position2 {
+    top: 100px;
   }
 }
 @media screen and (max-width: 268px) {
@@ -71,5 +90,14 @@
   .logo {
     width: 60px;
     height: 60px;
+  }
+  .bg-text {
+    font-size: 32px;
+  }
+  .position1 {
+    top: 30px;
+  }
+  .position2 {
+    top: 70px;
   }
 }

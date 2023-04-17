@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import Container from "../components/Container";
 import homeWave from "../assets/images/home-wave.png";
+import homeWaveNew from "../assets/images/homeWaveBgnew.svg";
 import "../assets/css/Homepage.css";
 import Lottie from 'react-lottie';
 import * as animationData from "../assets/lottie/69164-marketing-campaign-creative-3d-animation.json";
@@ -40,7 +41,8 @@ const HomePage = ({ waveRef, sections }) => {
         <>
             <div className="h-full min-h-screen w-full relative bg-[#D0E7E9]"
             >
-                <img ref={waveRef} src={homeWave} alt="homepage wave" className="w-full absolute -bottom-px  z-10" />
+                <img ref={waveRef} src={homeWave} alt="homepage wave" className="w-full h-[12vh] sm:h-fit absolute -bottom-[2px]  z-10" />
+                {/* <img ref={waveRef} src={homeWaveNew} alt="homepage wave" className="w-full sm:h-fit absolute bottom-0 xl:-bottom-12  z-10" /> */}
                 <Container>
                     <div className="h-full min-h-screen">
                         <div className="grid grid-cols-1 lg:grid-cols-2  min-h-screen h-full px-8 sm:px-20 lg:px-0">

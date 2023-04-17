@@ -67,7 +67,7 @@ const Navbar = () => {
     });
     return (
         <nav className="hidden lg:block">
-            <ul className="fixed text-white text-[12px] z-50 md:bottom-8 lg:bottom-12 2xl:bottom-20 left-16"
+            <ul className="fixed text-white text-[12px] z-50 md:bottom-8 lg:bottom-8 2xl:bottom-16 left-16"
                 style={{
                     fontFamily: "Poppins"
                 }}
