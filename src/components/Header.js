@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import brandLogo from "../assets/images/brandLogo.png";
 import smiley from "../assets/images/smileynew.png";
 import Sidebar from "./Sidebar";
 import "../assets/css/Header.css";
 
-const Header = ({ buttonRef, logoRef }) => {
-    const [activeSidebar, setSidebarActive] = useState(false);
+const Header = ({ buttonRef, logoRef, activeSidebar, setSidebarActive }) => {
 
     return (
         <>

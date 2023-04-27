@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import Header from "./components/Header";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
@@ -18,6 +18,8 @@ const PageComponents = () => {
     const buttonRef = useRef(null);
     const logoRef = useRef(null);
     const waveRef = useRef(null);
+    const [activeSidebar, setSidebarActive] = useState(false);
+
     const sections = document.getElementsByTagName('section');
     window.addEventListener('scroll', () => {
         // console.log("scrollY" + window.scrollY);
@@ -69,14 +71,14 @@ const PageComponents = () => {
         <>
             <div className="relative overflow-clip">
                 <Navbar />
-                <Header buttonRef={buttonRef} logoRef={logoRef} />
+                <Header buttonRef={buttonRef} logoRef={logoRef} activeSidebar={activeSidebar} setSidebarActive={setSidebarActive} />
                 <section id="home" className="min-h-[100vh] ">
                     {/* bg-[#ffefcf]  */}
                     {/* sticky top-0 */}
                     <HomePage waveRef={waveRef} sections={sections} />
                 </section>
                 <section id="about" className="min-h-[100vh] bg-[#1B3654]">
-                    <AboutPage />
+                    <AboutPage activeSidebar={activeSidebar} setSidebarActive={setSidebarActive} />
                 </section>
                 <section id="services" className="min-h-[100vh] bg-[#D0E7E9]">
                     <ServicesPage />
