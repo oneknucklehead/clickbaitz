@@ -31,12 +31,12 @@ const Sidebar = ({ setSidebarActive, activeSidebar }) => {
         <>
 
             <div
-                className={`transition-custom-bg fixed right-0 overflow-hidden w-full h-[100vh]
+                className={`transition-custom-bg fixed right-0 overflow-y-scroll w-full min-h-[100vh] h-fit
                 ${activeSidebar ? "opacity-100 z-50"
                         : "opacity-0 -z-50"}
             bg-[#d0e7e949]`}>
-                <div id="sidebar" ref={wrapperRef} className={`transition-custom-sidebar absolute right-0 top-0 py-6 px-8 bg-[#1B3654]
-                ${activeSidebar ? "w-full sm:w-[400px] h-full" : "w-[0px] h-full"}
+                <div id="sidebar" ref={wrapperRef} className={`transition-custom-sidebar absolute right-0 top-0 py-6 px-8 bg-[#1B3654] min-h-screen h-fit
+                ${activeSidebar ? "w-full sm:w-[400px] h-fit" : "w-[0px] h-fit"}
                 `}>
                     <div className="flex justify-end">
                         <button onClick={() => setSidebarActive(false)}
@@ -63,7 +63,7 @@ const Sidebar = ({ setSidebarActive, activeSidebar }) => {
                         </button>
                     </div>
 
-                    <div className="text-white text-4xl font-semibold tracking-wide">
+                    <div className="text-white text-3xl md:text-4xl font-semibold tracking-wide">
                         Say <br />
                         Hello
                     </div>
@@ -99,7 +99,7 @@ const Sidebar = ({ setSidebarActive, activeSidebar }) => {
                         <input type="text" className="text-white bg-transparent border-b-[1px] placeholder:font-semibold outline-none" placeholder="Say Hello" />
                         <input type="text" className="text-white bg-transparent border-b-[1px] placeholder:font-semibold outline-none" placeholder="Email" />
                         <textarea rows={3} className="text-white border-none text-area placeholder:font-semibold" placeholder="Your message" />
-                        <button className="bg-[#D0E7E9] p-2 text-[#1B3654] my-4">
+                        <button className="bg-[#D0E7E9] p-2 text-[#1B3654] my-0 sm:my-4">
                             <span className="flex justify-between items-center font-bold text-sm">
                                 <span>SEND</span>
                                 <span>

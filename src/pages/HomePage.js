@@ -49,7 +49,7 @@ const HomePage = ({ waveRef, sections }) => {
                             <span className="disp-rocket1 invisible lg:hidden">
                                 <Navbar />
                             </span>
-                            <div className="text-[#1B3654] text-center lg:text-left flex flex-col justify-end lg:justify-center items-start px-4 md:px-0">
+                            <div className="text-[#1B3654] text-center lg:text-left flex flex-col justify-end lg:justify-center items-start px-4 pt-4 md:px-0">
                                 <h3 className="w-full lg:w-fit text-4xl 2xl:text-5xl fontstyle-lato font-semibold"
                                     data-aos="fade-up"
                                     data-aos-duration="1000"
@@ -100,8 +100,8 @@ const HomePage = ({ waveRef, sections }) => {
                                 </span>
                                 <span className="disp-rocket2 pl-2 z-0">
                                     <Lottie options={defaultOptions}
-                                        width={300}
-                                        height={300}
+                                        width={250}
+                                        height={250}
                                     />
                                 </span>
                             </div>
