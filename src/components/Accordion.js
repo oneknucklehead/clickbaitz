@@ -1,14 +1,14 @@
 import React from 'react';
 import dummyImg from "../assets/images/dummy.jpg";
 
-const Accordion = ({ id, last = false, name, tags, categoryTags }) => {
+const Accordion = ({ id, last = false, name, tags, categoryTags, img = dummyImg, desc = "Brief description will go here" }) => {
     return (
         <>
             <div
                 class={`rounded-none border border-l-0 border-r-0 border-t-0 ${last && "border-b-0"}`}>
                 <h2 class="mb-0" id={`flush-heading${id}`}>
                     <button
-                        class="group text-white relative flex lg:grid lg:grid-cols-3 w-full justify-between lg:justify-center items-center rounded-none border-0 py-4 px-5 text-left transition [overflow-anchor:none]"
+                        class="group text-white relative flex gap-4 lg:grid lg:grid-cols-3 w-full justify-between lg:justify-center items-center rounded-none border-0 py-4 px-5 text-left transition [overflow-anchor:none]"
                         type="button"
                         data-te-collapse-init
                         data-te-collapse-collapsed
@@ -19,16 +19,16 @@ const Accordion = ({ id, last = false, name, tags, categoryTags }) => {
 
                             {name}
                         </span>
-                        <div className="hidden lg:flex lg:flex-col">
+                        <div className="hidden lg:flex lg:flex-col pb-4">
                             <span className="text-base lg:text-xl">What we do</span>
                             <span className="text-xs text-[#e0e0e0]">
                                 {tags.map((tag, index) => (
-                                    <span key={index}>{index === (categoryTags.length - 1) ? `${tag}` : `${tag}, `}</span>
+                                    <span key={index}>{index === (categoryTags.length - 1) ? `${tag}, ` : `${tag}`}</span>
                                 ))}
                             </span>
                         </div>
                         <span className="hidden lg:flex items-center">
-                            <div className="flex flex-col">
+                            <div className="flex flex-col pb-4">
                                 <span className="text-base lg:text-xl">
                                     Category
                                 </span>
@@ -63,20 +63,20 @@ const Accordion = ({ id, last = false, name, tags, categoryTags }) => {
                     data-te-collapse-item
                     aria-labelledby={`flush-heading${id}`}
                     data-te-parent="#accordionFlushExample">
-                    <div className="py-4 px-5 grid grid-cols-2 lg:grid-cols-3 text-white">
-                        <div className="flex flex-col lg:hidden">
+                    <div className="py-4 px-5 gap-4 grid grid-cols-2 lg:grid-cols-3 text-white break-words">
+                        <div className="flex flex-col lg:hidden  pb-4">
                             <span className="text-base lg:text-xl">What we do</span>
                             <span className="text-xs text-[#e0e0e0]">
                                 {tags.map((tag, index) => (
-                                    <span key={index}>{index === (categoryTags.length - 1) ? `${tag}` : `${tag}, `}</span>
+                                    <span key={index}>{index === (categoryTags.length - 1) ? `${tag}, ` : `${tag}`}</span>
                                 ))}
                             </span>
                         </div>
-                        <div className="flex flex-col lg:hidden">
-                            <span >What we do</span>
+                        <div className="flex flex-col lg:hidden pb-4">
+                            <span >Category</span>
                             <span className="text-xs text-[#e0e0e0]">{categoryTags.map((tag, index) => (
                                 <span key={index}>
-                                    {index === (categoryTags.length - 1) ? `${tag}` : `${tag}, `}
+                                    {index === (categoryTags.length - 1) ? `${tag}, ` : `${tag}`}
                                 </span>
                             ))}</span>
                         </div>
@@ -84,10 +84,11 @@ const Accordion = ({ id, last = false, name, tags, categoryTags }) => {
                             data-aos="fade-up"
                             data-aos-duration="1000"
                         >
-                            Brief description will go here
+                            {desc}
                         </div>
                         <div className="col-span-2 lg:col-span-2">
-                            <img src={dummyImg} alt="clientImg"
+                            <img src={img} alt="clientImg"
+                                className="w-full object-cover max-h-[800px]"
                                 data-aos="fade-up"
                                 data-aos-duration="1000"
                             />
