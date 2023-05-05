@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/clickbaitz/static/css/main.62b85133.css",
-    "main.js": "/clickbaitz/static/js/main.3f3f9ffa.js",
+    "main.css": "/clickbaitz/static/css/main.e34d17ae.css",
+    "main.js": "/clickbaitz/static/js/main.ba9e74ed.js",
     "static/js/977.6b77a864.chunk.js": "/clickbaitz/static/js/977.6b77a864.chunk.js",
     "static/js/787.f8c428ad.chunk.js": "/clickbaitz/static/js/787.f8c428ad.chunk.js",
+    "static/media/case1.jpg": "/clickbaitz/static/media/case1.3283c2d90f658557fa93.jpg",
     "static/media/dummy.jpg": "/clickbaitz/static/media/dummy.74f2172dc6e84aa6d163.jpg",
+    "static/media/case2.jpg": "/clickbaitz/static/media/case2.c698456fcf78d252a318.jpg",
     "static/media/aboutImg.jpg": "/clickbaitz/static/media/aboutImg.9e9b06e4a8be430abe8d.jpg",
     "static/media/brandLogoWhite.png": "/clickbaitz/static/media/brandLogoWhite.c7f7d9cad3d3ba3d3934.png",
     "static/media/brandLogo.png": "/clickbaitz/static/media/brandLogo.21d4f82969d3ea687ed7.png",
     "static/media/blobanimation.svg": "/clickbaitz/static/media/blobanimation.aca92e6c1753fb07e705dbe7072bb490.svg",
     "static/media/blobanimationAbout.svg": "/clickbaitz/static/media/blobanimationAbout.299e9de8bb5f64f742b5254a3fa11b50.svg",
     "index.html": "/clickbaitz/index.html",
-    "main.62b85133.css.map": "/clickbaitz/static/css/main.62b85133.css.map",
-    "main.3f3f9ffa.js.map": "/clickbaitz/static/js/main.3f3f9ffa.js.map",
+    "main.e34d17ae.css.map": "/clickbaitz/static/css/main.e34d17ae.css.map",
+    "main.ba9e74ed.js.map": "/clickbaitz/static/js/main.ba9e74ed.js.map",
     "977.6b77a864.chunk.js.map": "/clickbaitz/static/js/977.6b77a864.chunk.js.map",
     "787.f8c428ad.chunk.js.map": "/clickbaitz/static/js/787.f8c428ad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.62b85133.css",
-    "static/js/main.3f3f9ffa.js"
+    "static/css/main.e34d17ae.css",
+    "static/js/main.ba9e74ed.js"
   ]
 }
