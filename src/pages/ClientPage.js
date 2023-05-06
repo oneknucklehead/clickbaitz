@@ -25,13 +25,13 @@ const ClientPage = () => {
                                 className="rounded-none border border-t-0 border-l-0 border-r-0 ">
                                 <h2 class="mb-0" id="flush-headingOne">
                                     <button
-                                        className="group text-white relative flex  gap-4 lg:grid lg:grid-cols-3 w-full justify-between lg:justify-center items-center rounded-none border-0 py-4 px-5 text-left transition [overflow-anchor:none]"
+                                        className="group text-white relative flex  gap-4 lg:grid lg:grid-cols-3 w-full justify-between lg:justify-center  items-center md:items-start rounded-none border-0 py-4 px-5 text-left transition [overflow-anchor:none]"
                                         type="button"
                                         data-te-collapse-init
                                         data-te-target="#flush-collapseOne"
                                         aria-expanded="false"
                                         aria-controls="flush-collapseOne">
-                                        <span className="font-semibold text-lg lg:text-2xl"
+                                        <span className="font-semibold flex h-full items-center text-lg lg:text-2xl"
 
                                         >
 
@@ -41,7 +41,8 @@ const ClientPage = () => {
 
                                         >
                                             <span className="text-base lg:text-xl">What we do</span>
-                                            <span className="text-xs text-[#e0e0e0]">Social Media/Website/Event management, Photoshoots </span>
+                                            <span className="text-xs text-[#e0e0e0]">Social Media Marketing and Marketing, Website development and management,
+                                                Events and photography</span>
                                         </div>
                                         <span className="hidden lg:flex items-center">
                                             <div className="flex flex-col"
@@ -94,7 +95,8 @@ const ClientPage = () => {
                                             data-aos-duration="1000"
                                         >
                                             <span className="text-base lg:text-xl">What we do</span>
-                                            <span className="text-xs text-[#e0e0e0]">Social Media/Website/Event management, Photoshoots </span>
+                                            <span className="text-xs text-[#e0e0e0]">Social Media Marketing and Marketing, Website development and management,
+                                                Events and photography</span>
                                         </div>
                                         <div className="flex flex-col lg:hidden pb-4"
                                             data-aos="fade-up"
@@ -107,7 +109,7 @@ const ClientPage = () => {
                                             data-aos="fade-up"
                                             data-aos-duration="1000"
                                         >
-                                            With Chamak, we manage their social media as well as their website. We also provide her assistance in events, campaigns and photoshoots.
+                                            For Chamak, we provide social media management and marketing. Their website is developed and managed by us. Our services also covers the events, campaigns and photo shoots for the label.
                                         </div>
                                         <div className="col-span-2 lg:col-span-2 pb-4">
                                             <img src={dummyImg} alt="clientImg"
@@ -122,7 +124,7 @@ const ClientPage = () => {
                             </div>
                             {/* <Accordion id="zero" name={"zudio"} tags={["hello", "ciao"]} categoryTags={["cate", "gory"]} />
                             <Accordion id="two" name={"zudio"} tags={["hello", "ciao"]} categoryTags={["cate", "gory"]} /> */}
-                            <Accordion id="three" last={true} name={"Fettle Fitness"} desc={"With Fettle Fitness, we manage their Social Media and advertise their company."} tags={["Social Media management", "Advertisement"]} categoryTags={["Gym"]} img={dummyImg2} />
+                            <Accordion id="three" last={true} name={"Fettle Fitness"} desc={"For The Fettle Fitness , we provide social media management and google my business listing. We also look into their offline marketing campaigns."} tags={[" Social Media Management", "Google My Business Management and Marketing"]} categoryTags={["Gym"]} img={dummyImg2} />
                         </div>
                     </div>
 
