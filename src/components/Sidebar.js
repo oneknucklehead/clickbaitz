@@ -1,11 +1,67 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import "../assets/css/Sidebar.css";
 import Lottie from 'react-lottie';
 import * as animationData from "../assets/lottie/97422-blob.json";
 import { Link } from "react-scroll";
+import axios from "axios";
 
 const Sidebar = ({ setSidebarActive, activeSidebar }) => {
     const wrapperRef = useRef(null);
+    const [name, setName] = useState("");
+    const [nameErr, setNameErr] = useState(null);
+    const [email, setEmail] = useState("");
+    const [emailErr, setEmailErr] = useState(null);
+    const [message, setMessage] = useState("");
+    const [messageErr, setMessageErr] = useState(null);
+    const [loader, setLoader] = useState(false);
+    const [result, setResult] = useState(null);
+    const [resultBorder, setResultBorder] = useState("#00a0d2");
+
+    const handleSubmit = () => {
+        setResult(null);
+        if (name === "") {
+            setNameErr("You left the name field empty.");
+            return;
+        }
+        setNameErr(null);
+        if (email === "") {
+            setEmailErr("You left the email field empty.");
+            return;
+        }
+        setEmailErr(null);
+        if (message === "") {
+            setMessageErr("You left the message field empty.");
+            return;
+        }
+        setMessageErr(null);
+        setLoader(true);
+        axios.defaults.headers.post['Content-Type'] = 'application/json';
+        axios.post('https://formsubmit.co/ajax/zohebcool1542@gmail.com', {
+            name: name,
+            email: email,
+            message: message
+        })
+            .then((response) => {
+                console.log(response);
+                setLoader(false);
+                if (response.data.success === "true") {
+                    setResultBorder("#00a0d2");
+                    setResult("Thank you for choosing us! We've received your message and we'll get back to you asap. 💙");
+                }
+                else {
+                    setResultBorder("#FCE205");
+                    setResult("⚠️ There was an error submitting your message, try refreshing the page and sending your message again. Inconvenience is regretted.");
+                }
+
+            })
+            .catch((error) => {
+                console.log(error);
+                setLoader(false);
+                setResultBorder("#DC3232");
+                setResult("There was an error submitting your message, try refreshing the page and sending your message again. Inconvenience is regretted.");
+
+            });
+    };
 
     useEffect(() => {
         function handleClickOutside(event) {
@@ -14,9 +70,13 @@ const Sidebar = ({ setSidebarActive, activeSidebar }) => {
             }
         }
         document.addEventListener("mousedown", handleClickOutside);
+
+        //cleanup
         return () => {
             document.removeEventListener("mousedown", handleClickOutside);
         };
+
+
     }, [wrapperRef, activeSidebar, setSidebarActive]);
 
     const defaultOptions = {
@@ -95,20 +155,49 @@ const Sidebar = ({ setSidebarActive, activeSidebar }) => {
                             </Link>
                         </span>
                     </div>
-                    <div className="flex flex-col gap-4 py-4 lg:py-12">
-                        <input type="text" className="text-white bg-transparent border-b-[1px] placeholder:font-semibold outline-none" placeholder="Say Hello" />
-                        <input type="text" className="text-white bg-transparent border-b-[1px] placeholder:font-semibold outline-none" placeholder="Email" />
-                        <textarea rows={3} className="text-white border-none text-area placeholder:font-semibold" placeholder="Your message" />
-                        <button className="bg-[#D0E7E9] p-2 text-[#1B3654] my-0 sm:my-4">
-                            <span className="flex justify-between items-center font-bold text-sm">
-                                <span>SEND</span>
-                                <span>
-                                    <svg width="20" height="12" viewBox="0 0 39 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M38.4142 16.4142C39.1953 15.6332 39.1953 14.3668 38.4142 13.5858L25.6863 0.857864C24.9052 0.0768156 23.6389 0.0768156 22.8579 0.857864C22.0768 1.63891 22.0768 2.90524 22.8579 3.68629L34.1716 15L22.8579 26.3137C22.0768 27.0948 22.0768 28.3611 22.8579 29.1421C23.6389 29.9232 24.9052 29.9232 25.6863 29.1421L38.4142 16.4142ZM0 17H37V13H0V17Z" fill="#1B3654" />
-                                    </svg>
+                    <div >
+                        <div className="flex flex-col gap-4 py-4 lg:py-12">
+                            <input type="hidden" name="_captcha" value="false" />
+                            <div className="flex flex-col">
+
+                                <input type="text" onChange={(e) => setName(e.target.value)} name="name" required className="text-white bg-transparent border-b-[1px] placeholder:font-semibold outline-none" placeholder="Name" />
+                                {nameErr && <span className="text-[#DC3232] text-xs">{nameErr}</span>}
+                            </div>
+                            <div className="flex flex-col">
+
+                                <input type="email" onChange={(e) => setEmail(e.target.value)} name="email" required className="text-white bg-transparent border-b-[1px] placeholder:font-semibold outline-none" placeholder="Email" />
+                                {emailErr && <span className="text-[#DC3232] text-xs">{emailErr}</span>}
+
+                            </div>
+                            <div className="flex flex-col">
+
+                                <textarea rows={3} onChange={(e) => setMessage(e.target.value)} name="message" className="text-white border-none text-area placeholder:font-semibold" placeholder="Your message" />
+                                {messageErr && <span className="text-[#DC3232] text-xs">{messageErr}</span>}
+                            </div>
+                            <button onClick={handleSubmit} type="submit" className="bg-[#D0E7E9] p-2 text-[#1B3654] my-0 sm:my-4">
+                                <span className="flex justify-between items-center font-bold text-sm">
+                                    <span>{loader ? "SENDING..." : "SEND"}</span>
+                                    <span>
+                                        <svg width="20" height="12" viewBox="0 0 39 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M38.4142 16.4142C39.1953 15.6332 39.1953 14.3668 38.4142 13.5858L25.6863 0.857864C24.9052 0.0768156 23.6389 0.0768156 22.8579 0.857864C22.0768 1.63891 22.0768 2.90524 22.8579 3.68629L34.1716 15L22.8579 26.3137C22.0768 27.0948 22.0768 28.3611 22.8579 29.1421C23.6389 29.9232 24.9052 29.9232 25.6863 29.1421L38.4142 16.4142ZM0 17H37V13H0V17Z" fill="#1B3654" />
+                                        </svg>
+                                    </span>
                                 </span>
-                            </span>
-                        </button>
+                            </button>
+                            {
+                                result ? <div>
+                                    <div className={`w-full text-sm border-2 text-white p-2`}
+                                        style={{
+                                            borderColor: `${resultBorder}`
+                                        }}
+                                    >
+                                        <p>{result}</p>
+                                    </div>
+                                </div> : null
+                            }
+                        </div>
+
+
                     </div>
                     <div className="flex justify-between items-end">
                         {/* SOCIAL ICONS */}
