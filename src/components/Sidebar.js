@@ -36,7 +36,7 @@ const Sidebar = ({ setSidebarActive, activeSidebar }) => {
         setMessageErr(null);
         setLoader(true);
         axios.defaults.headers.post['Content-Type'] = 'application/json';
-        axios.post('https://formsubmit.co/ajax/hello@clickbaitz.com', {
+        axios.post('https://formsubmit.co/ajax/1e47379e5dea14f803dc6d5a4dd843a0', {
             name: name,
             email: email,
             message: message
