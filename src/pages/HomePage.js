@@ -41,7 +41,7 @@ const HomePage = ({ waveRef, sections }) => {
         <>
             <div className="h-full min-h-screen w-full relative bg-[#D0E7E9]"
             >
-                <img ref={waveRef} src={homeWave} alt="homepage wave" className="w-full h-[20vh] object-cover sm:h-fit absolute -bottom-[2px]  z-10" />
+                <img ref={waveRef} src={homeWave} alt="homepage wave" className="w-full h-[20vh] object-cover sm:h-fit absolute -bottom-[2px]" />
                 {/* <img ref={waveRef} src={homeWaveNew} alt="homepage wave" className="w-full sm:h-fit absolute bottom-0 xl:-bottom-12  z-10" /> */}
                 <Container>
                     <div className="h-full min-h-screen">

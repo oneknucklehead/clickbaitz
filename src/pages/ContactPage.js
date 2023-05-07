@@ -89,7 +89,7 @@ const ContactPage = () => {
                                 <h3 className="text-xl sm:text-2xl font-semibold">Connect with us</h3>
                                 <div className="text-lg py-2">
 
-                                    <p className="text-sm sm:text-lg w-fit">+91 9988776655</p>
+                                    <p className="text-sm sm:text-lg w-fit">+91 9147070648</p>
                                     <p className="text-base sm:text-lg">hello@clickbaitz.com</p>
                                 </div>
                             </div>
@@ -112,7 +112,7 @@ const ContactPage = () => {
                                 © ClickBaitz Agency {new Date().getFullYear()}
                             </div>
                             <div className="flex gap-4">
-                                <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
+                                <a href="https://www.facebook.com/clickbaiitz" target="_blank" rel="noreferrer">
                                     <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M18 3C9.7335 3 3 9.7335 3 18C3 26.2665 9.7335 33 18 33C26.2665 33 33 26.2665 33 18C33 9.7335 26.2665 3 18 3ZM18 6C24.6452 6 30 11.3548 30 18C30 24.0217 25.598 28.9695 19.8281 29.8477V21.5771H23.3203L23.8682 18.0293H19.8281V16.0898C19.8281 14.6153 20.3085 13.3066 21.6885 13.3066H23.9033V10.21C23.5133 10.1575 22.6903 10.043 21.1348 10.043C17.8858 10.043 15.9814 11.759 15.9814 15.668V18.0293H12.6416V21.5771H15.9814V29.8184C10.3054 28.8613 6 23.9554 6 18C6 11.3548 11.3548 6 18 6Z" fill="#1B3654" />
                                     </svg>

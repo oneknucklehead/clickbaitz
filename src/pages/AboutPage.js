@@ -22,7 +22,7 @@ const AboutPage = ({ activeSidebar, setSidebarActive }) => {
                         data-aos-duration="1000"
                         data-aos-delay="100"
                     ></div>
-                    <p className="text-left text-white text-sm md:text-lg"
+                    <p className="text-left text-white text-sm md:text-lg md:max-xl:pr-32"
                         data-aos="fade-up"
                         data-aos-duration="1000"
                         data-aos-delay="200"
@@ -56,7 +56,7 @@ const AboutPage = ({ activeSidebar, setSidebarActive }) => {
                     </div>
                 </div>
                 <div className="lg:h-[100vh] transition-custom">
-                    <div className="relative flex justify-center items-center h-full">
+                    <div className="relative flex justify-center items-center h-full mt-12 md:mt-0">
                         {/* <span className="hidden 2xl:block absolute w-full top-24 -right-24">
                                 <Lottie options={defaultOptions}
                                     width={750}
