@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import './App.css';
 import PageComponents from "./PageComponents";
+import MetaPixel from "./utils/meta/metaPixel";
 
 function App() {
   useEffect(() => {
@@ -12,6 +13,7 @@ function App() {
   return (
     <div className="App">
       {/* <Navbar /> */}
+      <MetaPixel />
       <PageComponents />
 
     </div>
